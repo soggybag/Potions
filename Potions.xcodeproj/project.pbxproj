@@ -7,12 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B4AADDC1A4933EB00C9D06D /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4AADDB1A4933EB00C9D06D /* Notes.swift */; };
 		7B548AFA1A47F9C3005A054F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B548AF91A47F9C3005A054F /* AppDelegate.swift */; };
-		7B548AFC1A47F9C3005A054F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B548AFB1A47F9C3005A054F /* ViewController.swift */; };
-		7B548AFF1A47F9C3005A054F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B548AFD1A47F9C3005A054F /* Main.storyboard */; };
 		7B548B011A47F9C3005A054F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B548B001A47F9C3005A054F /* Images.xcassets */; };
-		7B548B041A47F9C3005A054F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B548B021A47F9C3005A054F /* LaunchScreen.xib */; };
 		7B548B101A47F9C3005A054F /* PotionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B548B0F1A47F9C3005A054F /* PotionsTests.swift */; };
+		7B548B1A1A47F9DB005A054F /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B548B191A47F9DB005A054F /* DetailTableViewController.swift */; };
+		7B548B1C1A47F9EF005A054F /* PotionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B548B1B1A47F9EF005A054F /* PotionStore.swift */; };
+		7B548B1E1A47F9FD005A054F /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B548B1D1A47F9FD005A054F /* Realm.framework */; };
+		7B548B201A47FA09005A054F /* RLMSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B548B1F1A47FA09005A054F /* RLMSupport.swift */; };
+		7B548B221A47FA19005A054F /* Startup-image.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B548B211A47FA19005A054F /* Startup-image.png */; };
+		7B548B241A47FA55005A054F /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B548B231A47FA55005A054F /* libc++.dylib */; };
+		7B548B261A47FA7F005A054F /* Potion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B548B251A47FA7F005A054F /* Potion.swift */; };
+		7B548B311A47FA93005A054F /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B548B2A1A47FA93005A054F /* TPKeyboardAvoidingCollectionView.m */; };
+		7B548B321A47FA93005A054F /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B548B2C1A47FA93005A054F /* TPKeyboardAvoidingScrollView.m */; };
+		7B548B331A47FA93005A054F /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B548B2E1A47FA93005A054F /* TPKeyboardAvoidingTableView.m */; };
+		7B548B341A47FA93005A054F /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B548B301A47FA93005A054F /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
+		7B548B371A47FAD3005A054F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B548B361A47FAD3005A054F /* ViewController.swift */; };
+		7B548B391A47FAF8005A054F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B548B381A47FAF8005A054F /* LaunchScreen.xib */; };
+		7B548B3B1A47FB0D005A054F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B548B3A1A47FB0D005A054F /* Main.storyboard */; };
+		7B548B3E1A48887C005A054F /* Startup-image-320x568.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B548B3D1A48887C005A054F /* Startup-image-320x568.png */; };
+		7BC391231A48FC3A002A0459 /* Descriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC391221A48FC3A002A0459 /* Descriptor.swift */; };
+		7BD087E61A54B77100F0D5EE /* RobotoSlab-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7BD087E11A54B16400F0D5EE /* RobotoSlab-Bold.ttf */; };
+		7BD087E71A54B77400F0D5EE /* RobotoSlab-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7BD087E21A54B16400F0D5EE /* RobotoSlab-Light.ttf */; };
+		7BD087E81A54B77700F0D5EE /* RobotoSlab-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7BD087E31A54B16400F0D5EE /* RobotoSlab-Regular.ttf */; };
+		7BD087E91A54B77B00F0D5EE /* RobotoSlab-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7BD087E41A54B16400F0D5EE /* RobotoSlab-Thin.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +44,40 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7B548AF41A47F9C3005A054F /* Potions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Potions.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B4AADDB1A4933EB00C9D06D /* Notes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
+		7B548AF41A47F9C3005A054F /* potions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = potions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B548AF81A47F9C3005A054F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B548AF91A47F9C3005A054F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7B548AFB1A47F9C3005A054F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7B548AFE1A47F9C3005A054F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7B548B001A47F9C3005A054F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		7B548B031A47F9C3005A054F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		7B548B091A47F9C3005A054F /* PotionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PotionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B548B0E1A47F9C3005A054F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B548B0F1A47F9C3005A054F /* PotionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotionsTests.swift; sourceTree = "<group>"; };
+		7B548B191A47F9DB005A054F /* DetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailTableViewController.swift; path = ../DetailTableViewController.swift; sourceTree = "<group>"; };
+		7B548B1B1A47F9EF005A054F /* PotionStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PotionStore.swift; sourceTree = "<group>"; };
+		7B548B1D1A47F9FD005A054F /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		7B548B1F1A47FA09005A054F /* RLMSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RLMSupport.swift; sourceTree = "<group>"; };
+		7B548B211A47FA19005A054F /* Startup-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Startup-image.png"; path = "../Startup-image.png"; sourceTree = "<group>"; };
+		7B548B231A47FA55005A054F /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		7B548B251A47FA7F005A054F /* Potion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Potion.swift; sourceTree = "<group>"; };
+		7B548B271A47FA92005A054F /* Potions-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Potions-Bridging-Header.h"; sourceTree = "<group>"; };
+		7B548B281A47FA93005A054F /* TPKeyboard Avoiding Swift-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TPKeyboard Avoiding Swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		7B548B291A47FA93005A054F /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
+		7B548B2A1A47FA93005A054F /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
+		7B548B2B1A47FA93005A054F /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		7B548B2C1A47FA93005A054F /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		7B548B2D1A47FA93005A054F /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
+		7B548B2E1A47FA93005A054F /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
+		7B548B2F1A47FA93005A054F /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		7B548B301A47FA93005A054F /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		7B548B361A47FAD3005A054F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7B548B381A47FAF8005A054F /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		7B548B3A1A47FB0D005A054F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		7B548B3D1A48887C005A054F /* Startup-image-320x568.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Startup-image-320x568.png"; sourceTree = "<group>"; };
+		7BC391221A48FC3A002A0459 /* Descriptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Descriptor.swift; sourceTree = "<group>"; };
+		7BD087E11A54B16400F0D5EE /* RobotoSlab-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Bold.ttf"; sourceTree = "<group>"; };
+		7BD087E21A54B16400F0D5EE /* RobotoSlab-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Light.ttf"; sourceTree = "<group>"; };
+		7BD087E31A54B16400F0D5EE /* RobotoSlab-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Regular.ttf"; sourceTree = "<group>"; };
+		7BD087E41A54B16400F0D5EE /* RobotoSlab-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Thin.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +85,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B548B241A47FA55005A054F /* libc++.dylib in Frameworks */,
+				7B548B1E1A47F9FD005A054F /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,13 +106,15 @@
 				7B548AF61A47F9C3005A054F /* Potions */,
 				7B548B0C1A47F9C3005A054F /* PotionsTests */,
 				7B548AF51A47F9C3005A054F /* Products */,
+				7B548B231A47FA55005A054F /* libc++.dylib */,
+				7B548B1D1A47F9FD005A054F /* Realm.framework */,
 			);
 			sourceTree = "<group>";
 		};
 		7B548AF51A47F9C3005A054F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7B548AF41A47F9C3005A054F /* Potions.app */,
+				7B548AF41A47F9C3005A054F /* potions.app */,
 				7B548B091A47F9C3005A054F /* PotionsTests.xctest */,
 			);
 			name = Products;
@@ -77,12 +123,21 @@
 		7B548AF61A47F9C3005A054F /* Potions */ = {
 			isa = PBXGroup;
 			children = (
+				7BD087E51A54B16D00F0D5EE /* Fonts */,
+				7B4AADDB1A4933EB00C9D06D /* Notes.swift */,
+				7B548B351A47FA9F005A054F /* TPKeyboardAvoiding */,
+				7B548B3C1A47FB3C005A054F /* Model */,
+				7B548B1F1A47FA09005A054F /* RLMSupport.swift */,
 				7B548AF91A47F9C3005A054F /* AppDelegate.swift */,
-				7B548AFB1A47F9C3005A054F /* ViewController.swift */,
-				7B548AFD1A47F9C3005A054F /* Main.storyboard */,
+				7B548B361A47FAD3005A054F /* ViewController.swift */,
+				7B548B191A47F9DB005A054F /* DetailTableViewController.swift */,
+				7B548B3A1A47FB0D005A054F /* Main.storyboard */,
+				7B548B381A47FAF8005A054F /* LaunchScreen.xib */,
 				7B548B001A47F9C3005A054F /* Images.xcassets */,
-				7B548B021A47F9C3005A054F /* LaunchScreen.xib */,
+				7B548B3D1A48887C005A054F /* Startup-image-320x568.png */,
+				7B548B211A47FA19005A054F /* Startup-image.png */,
 				7B548AF71A47F9C3005A054F /* Supporting Files */,
+				7B548B271A47FA92005A054F /* Potions-Bridging-Header.h */,
 			);
 			path = Potions;
 			sourceTree = "<group>";
@@ -112,12 +167,49 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		7B548B351A47FA9F005A054F /* TPKeyboardAvoiding */ = {
+			isa = PBXGroup;
+			children = (
+				7B548B281A47FA93005A054F /* TPKeyboard Avoiding Swift-Bridging-Header.h */,
+				7B548B291A47FA93005A054F /* TPKeyboardAvoidingCollectionView.h */,
+				7B548B2A1A47FA93005A054F /* TPKeyboardAvoidingCollectionView.m */,
+				7B548B2B1A47FA93005A054F /* TPKeyboardAvoidingScrollView.h */,
+				7B548B2C1A47FA93005A054F /* TPKeyboardAvoidingScrollView.m */,
+				7B548B2D1A47FA93005A054F /* TPKeyboardAvoidingTableView.h */,
+				7B548B2E1A47FA93005A054F /* TPKeyboardAvoidingTableView.m */,
+				7B548B2F1A47FA93005A054F /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				7B548B301A47FA93005A054F /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+			);
+			name = TPKeyboardAvoiding;
+			sourceTree = "<group>";
+		};
+		7B548B3C1A47FB3C005A054F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7B548B251A47FA7F005A054F /* Potion.swift */,
+				7B548B1B1A47F9EF005A054F /* PotionStore.swift */,
+				7BC391221A48FC3A002A0459 /* Descriptor.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7BD087E51A54B16D00F0D5EE /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7BD087E11A54B16400F0D5EE /* RobotoSlab-Bold.ttf */,
+				7BD087E21A54B16400F0D5EE /* RobotoSlab-Light.ttf */,
+				7BD087E31A54B16400F0D5EE /* RobotoSlab-Regular.ttf */,
+				7BD087E41A54B16400F0D5EE /* RobotoSlab-Thin.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7B548AF31A47F9C3005A054F /* Potions */ = {
+		7B548AF31A47F9C3005A054F /* potions */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7B548B131A47F9C3005A054F /* Build configuration list for PBXNativeTarget "Potions" */;
+			buildConfigurationList = 7B548B131A47F9C3005A054F /* Build configuration list for PBXNativeTarget "potions" */;
 			buildPhases = (
 				7B548AF01A47F9C3005A054F /* Sources */,
 				7B548AF11A47F9C3005A054F /* Frameworks */,
@@ -127,9 +219,9 @@
 			);
 			dependencies = (
 			);
-			name = Potions;
+			name = potions;
 			productName = Potions;
-			productReference = 7B548AF41A47F9C3005A054F /* Potions.app */;
+			productReference = 7B548AF41A47F9C3005A054F /* potions.app */;
 			productType = "com.apple.product-type.application";
 		};
 		7B548B081A47F9C3005A054F /* PotionsTests */ = {
@@ -181,7 +273,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7B548AF31A47F9C3005A054F /* Potions */,
+				7B548AF31A47F9C3005A054F /* potions */,
 				7B548B081A47F9C3005A054F /* PotionsTests */,
 			);
 		};
@@ -192,9 +284,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B548AFF1A47F9C3005A054F /* Main.storyboard in Resources */,
-				7B548B041A47F9C3005A054F /* LaunchScreen.xib in Resources */,
+				7BD087E81A54B77700F0D5EE /* RobotoSlab-Regular.ttf in Resources */,
+				7BD087E91A54B77B00F0D5EE /* RobotoSlab-Thin.ttf in Resources */,
+				7B548B391A47FAF8005A054F /* LaunchScreen.xib in Resources */,
+				7BD087E71A54B77400F0D5EE /* RobotoSlab-Light.ttf in Resources */,
+				7B548B3E1A48887C005A054F /* Startup-image-320x568.png in Resources */,
+				7BD087E61A54B77100F0D5EE /* RobotoSlab-Bold.ttf in Resources */,
 				7B548B011A47F9C3005A054F /* Images.xcassets in Resources */,
+				7B548B221A47FA19005A054F /* Startup-image.png in Resources */,
+				7B548B3B1A47FB0D005A054F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +310,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B548AFC1A47F9C3005A054F /* ViewController.swift in Sources */,
+				7B548B371A47FAD3005A054F /* ViewController.swift in Sources */,
+				7B548B261A47FA7F005A054F /* Potion.swift in Sources */,
+				7B548B321A47FA93005A054F /* TPKeyboardAvoidingScrollView.m in Sources */,
+				7B548B1A1A47F9DB005A054F /* DetailTableViewController.swift in Sources */,
+				7B548B331A47FA93005A054F /* TPKeyboardAvoidingTableView.m in Sources */,
+				7B548B201A47FA09005A054F /* RLMSupport.swift in Sources */,
+				7B548B1C1A47F9EF005A054F /* PotionStore.swift in Sources */,
 				7B548AFA1A47F9C3005A054F /* AppDelegate.swift in Sources */,
+				7B548B311A47FA93005A054F /* TPKeyboardAvoidingCollectionView.m in Sources */,
+				7BC391231A48FC3A002A0459 /* Descriptor.swift in Sources */,
+				7B548B341A47FA93005A054F /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+				7B4AADDC1A4933EB00C9D06D /* Notes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,29 +338,10 @@
 /* Begin PBXTargetDependency section */
 		7B548B0B1A47F9C3005A054F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7B548AF31A47F9C3005A054F /* Potions */;
+			target = 7B548AF31A47F9C3005A054F /* potions */;
 			targetProxy = 7B548B0A1A47F9C3005A054F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		7B548AFD1A47F9C3005A054F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7B548AFE1A47F9C3005A054F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		7B548B021A47F9C3005A054F /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7B548B031A47F9C3005A054F /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		7B548B111A47F9C3005A054F /* Debug */ = {
@@ -289,7 +378,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -325,7 +414,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -336,9 +425,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Potions/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Potions/Potions-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -346,9 +444,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Potions/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Potions/Potions-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -398,13 +504,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7B548B131A47F9C3005A054F /* Build configuration list for PBXNativeTarget "Potions" */ = {
+		7B548B131A47F9C3005A054F /* Build configuration list for PBXNativeTarget "potions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7B548B141A47F9C3005A054F /* Debug */,
 				7B548B151A47F9C3005A054F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7B548B161A47F9C3005A054F /* Build configuration list for PBXNativeTarget "PotionsTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +520,7 @@
 				7B548B181A47F9C3005A054F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
