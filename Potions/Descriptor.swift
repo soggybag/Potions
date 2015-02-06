@@ -34,20 +34,19 @@ extension Array {
 
 class Descriptor {
     
-    let colorArray    = ["Red", "Green", "Blue", "Yellow", "Orange", "Purple", "Pink", "Mauve", "Ochre", "White", "Violet", "Gray", "Cyan", "Emerald", "Maroon", "Tan", "Baige", "Shifting colors"]
-    let colorModifierArray = ["Dark", "Light", "Glowing", "Murky", "Milky", "Scintillating", "Sparkling", "Swirling", "Transparent", "Semi-transparent", "Smoky", "Pearlescent"]
-    let materialArray = ["liquid", "powder", "oil", "viscous fluid"]
-    let tasteModiferArray = ["bitter", "sweet", "peppery"]
-    let tasteArray    = ["almond", "apples", "ash", "nothing", "honey", "meat", "herbs", "blood", "cookies", "nutmeg", "carrots", "parsnips", "vegetables", "onions", "gsrlic"]
-    let smellArray    = ["apples", "pepper", "urine", "earth", "curdled milk", "herbs", "brimstone", "baked bread", "frying bacon", "figs", "flesh", "farts", "metallic"]
-    
+    let colorModifierArray  = ["Dark", "Light", "Glowing", "Murky", "Milky", "Scintillating", "Sparkling", "Swirling", "Transparent", "Semi-transparent", "Smoky", "Pearlescent"]
+    let colorArray          = ["red", "green", "blue", "yellow", "orange", "purple", "pink", "mauve", "ochre", "white", "violet", "gray", "cyan", "emerald", "maroon", "shifting colors"]
+    let materialArray       = ["liquid", "powder", "oil", "viscous fluid", "thick fluid", "chalky"]
+    let smellModiferArray   = ["bitter", "sweet", "spicy", "burnt", "sour"]
+    let smellArray          = ["apples", "pepper", "earth", "milk", "herbs", "brimstone", "baked bread", "frying bacon", "figs", "flesh", "farts", "metallic"]
+    let tasteArray          = ["almond", "apples", "ash", "nothing", "honey", "meat", "herbs", "blood", "cookies", "nutmeg", "carrots", "parsnips", "vegetables", "onions", "garlic"]
     
     func randomInt(range: Int) -> Int {
         return Int(arc4random_uniform(UInt32(range)))
     }
     
     func get() -> String {
-        return "\(colorModifierArray.pick()!) \(colorArray.pick()!) \(materialArray.pick()!) smells of \(smellArray.pick()!). Tastes of \(tasteArray.pick()!)."
+        return "\(colorModifierArray.pick()!) \(colorArray.pick()!) \(materialArray.pick()!) smells like \(smellModiferArray.pick()!) \(smellArray.pick()!). Tastes of \(tasteArray.pick()!)."
     }
 }
 
