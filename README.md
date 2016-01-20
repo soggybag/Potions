@@ -9,3 +9,14 @@ The app is written in Swift. It uses Realm as a Data base to store and manage po
 iTunes store [here](https://itunes.apple.com/us/app/potions-generator/id951378721?mt=8), or visit the web 
 [site](http://webdevils.com/potions/).
 
+#Build it for yourself
+You can download and build the app for yourself. 
+
+#Screenshots
+Here are a few screenshots. I used 
+![Potion Generator Screenshot](http://webdevils.com/potions/img/iPhone5_frame.png)
+![Potion Generator Screenshot](http://webdevils.com/potions/img/photo-3.png)
+![Potion Generator Screenshot](http://webdevils.com/potions/img/photo-4.png)
+![Potion Generator Screenshot](http://webdevils.com/potions/img/photo-5.png)
+![Potion Generator Screenshot](http://webdevils.com/potions/img/Potion-bottle.png)
+
