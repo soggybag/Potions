@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 mitchell hudson. All rights reserved.
 //
 
+// TODO: Add textStyle support for resizing type from System
+
 import UIKit
 
 @UIApplicationMain

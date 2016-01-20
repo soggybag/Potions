@@ -27,7 +27,7 @@ Side effects:
 import Foundation
 
 extension Array {
-    func pick() -> T? {
+    func pick() -> Element? {
         return count > 0 ? self[Int(arc4random_uniform(UInt32(count)))] : nil
     }
 }
@@ -41,6 +41,8 @@ class Descriptor {
     let smellArray          = ["apples", "pepper", "earth", "milk", "herbs", "brimstone", "baked bread", "frying bacon", "figs", "flesh", "farts", "metallic"]
     let tasteArray          = ["almond", "apples", "ash", "nothing", "honey", "meat", "herbs", "blood", "cookies", "nutmeg", "carrots", "parsnips", "vegetables", "onions", "garlic"]
     
+    
+    
     func randomInt(range: Int) -> Int {
         return Int(arc4random_uniform(UInt32(range)))
     }
@@ -48,6 +50,10 @@ class Descriptor {
     func get() -> String {
         return "\(colorModifierArray.pick()!) \(colorArray.pick()!) \(materialArray.pick()!) smells like \(smellModiferArray.pick()!) \(smellArray.pick()!). Tastes of \(tasteArray.pick()!)."
     }
+    
+    // Dark red liquid smells like bitter apples
+    // A light 
+    
 }
 
 

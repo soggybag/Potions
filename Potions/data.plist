@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>color-modifier</key>
+	<array>
+		<string>dark</string>
+		<string>light</string>
+		<string>glowing</string>
+		<string>murky</string>
+		<string>milky</string>
+		<string>scintilating</string>
+		<string>sparkling</string>
+		<string>swirling</string>
+		<string>transparent</string>
+		<string>semi-transparent</string>
+		<string>smoky</string>
+		<string>pearlescent</string>
+	</array>
+	<key>color</key>
+	<array>
+		<string>red</string>
+		<string>green</string>
+		<string>blue</string>
+		<string>yellow</string>
+		<string>orange</string>
+		<string>purple</string>
+		<string>pink</string>
+		<string>mauve</string>
+		<string>ochre</string>
+		<string>white</string>
+		<string>violet</string>
+		<string>gray</string>
+		<string>cyan</string>
+		<string>emerald</string>
+		<string>maroon</string>
+		<string>shifting colors</string>
+	</array>
+	<key>material</key>
+	<array>
+		<string>liquid</string>
+		<string>powder</string>
+		<string>oil</string>
+		<string>viscous</string>
+		<string>thick</string>
+		<string>chalky</string>
+		<string>lumpy</string>
+	</array>
+	<key>smell-modifier</key>
+	<array>
+		<string>bitter</string>
+		<string>sweet</string>
+		<string>sharp</string>
+		<string>acrid</string>
+		<string>fresh</string>
+		<string>spicy</string>
+		<string>burnt</string>
+		<string>sour</string>
+		<string>rotten</string>
+	</array>
+	<key>smell</key>
+	<array>
+		<string>apples</string>
+		<string>pepper</string>
+		<string>earth</string>
+		<string>milk</string>
+		<string>herbs</string>
+		<string>brimstone</string>
+		<string>baked bread</string>
+		<string>frying bacon</string>
+		<string>figs</string>
+		<string>flesh</string>
+		<string>metallic</string>
+		<string>methane</string>
+	</array>
+	<key>tastes</key>
+	<array/>
+</dict>
+</plist>

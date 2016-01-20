@@ -35,12 +35,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Dispose of any resources that can be recreated.
     }
     
+    
+    
     // MARK: - Segue methods
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         var thePotion: Potion!
         
         if segue.identifier == "ShowPotionSegue" {
-            if let indexPath = self.tableView.indexPathForSelectedRow() {
+            if let indexPath = self.tableView.indexPathForSelectedRow {
                 thePotion = PotionStore.sharedInstance.get(indexPath.row)
             }
         } else if segue.identifier == "AddPotionSegue" {
@@ -49,8 +51,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             thePotion = PotionStore.sharedInstance.getRandomPotion()
         }
         
-        (segue.destinationViewController as DetailTableViewController).potion = thePotion
+        (segue.destinationViewController as! DetailTableViewController).potion = thePotion
     }
+    
+    
     
     /*
     @IBAction func unwindFromViewController(segue: UIStoryboardSegue) {
@@ -73,7 +77,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell") as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell")!
         
         let potion = PotionStore.sharedInstance.get(indexPath.row)
         cell.textLabel?.text = potion.name
@@ -97,4 +101,26 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

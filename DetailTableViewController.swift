@@ -40,9 +40,9 @@ class DetailTableViewController: UITableViewController, UITextFieldDelegate {
             let realm = RLMRealm.defaultRealm()
             realm.beginWriteTransaction()
             
-            potion.name = nameField.text
+            potion.name = nameField.text!
             potion.effect = effectText.text
-            potion.frequency = frequencyField.text.toInt()!
+            potion.frequency = Int(frequencyField.text!)!
             potion.descriptor = descriptionText.text
             
             realm.commitWriteTransaction()
@@ -92,6 +92,13 @@ class DetailTableViewController: UITableViewController, UITextFieldDelegate {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
+    
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.title = potion.name
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -114,10 +121,17 @@ class DetailTableViewController: UITableViewController, UITextFieldDelegate {
     }
     
     
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        super.touchesBegan(touches, withEvent: event)
+        tableView.endEditing(true)
+    }
+    
+    /*
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
         super.touchesBegan(touches, withEvent: event)
         tableView.endEditing(true)
     }
+    */
     
 
     // MARK: - Table view data source

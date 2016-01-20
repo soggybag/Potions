@@ -13,6 +13,16 @@
 Improve descriptors 
     Think about taste and smell
     Add description modifiers
+
+    Add alternate descriptor forms:
+        <color-mod> <color> <material> smells like <smell-mod> <smell>. Tastes like <taste>.
+        A <material> of <color-mod> <color> with the smell of <smell>.
+
+Use pList for default Potions
+
+Submit your potion list to the web
+
+Email a potion
     
 Implement side effects 
 

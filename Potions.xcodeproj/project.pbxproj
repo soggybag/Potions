@@ -26,6 +26,9 @@
 		7B548B391A47FAF8005A054F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B548B381A47FAF8005A054F /* LaunchScreen.xib */; };
 		7B548B3B1A47FB0D005A054F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B548B3A1A47FB0D005A054F /* Main.storyboard */; };
 		7B548B3E1A48887C005A054F /* Startup-image-320x568.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B548B3D1A48887C005A054F /* Startup-image-320x568.png */; };
+		7B88FA191A8A77F300052464 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B88FA181A8A77F300052464 /* SignupViewController.swift */; };
+		7B88FA1B1A8A781800052464 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B88FA1A1A8A781800052464 /* LoginViewController.swift */; };
+		7BAE1E861A9E35B4004267CF /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7BAE1E851A9E35B4004267CF /* data.plist */; };
 		7BC391231A48FC3A002A0459 /* Descriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC391221A48FC3A002A0459 /* Descriptor.swift */; };
 		7BD087E61A54B77100F0D5EE /* RobotoSlab-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7BD087E11A54B16400F0D5EE /* RobotoSlab-Bold.ttf */; };
 		7BD087E71A54B77400F0D5EE /* RobotoSlab-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7BD087E21A54B16400F0D5EE /* RobotoSlab-Light.ttf */; };
@@ -74,6 +77,9 @@
 		7B548B381A47FAF8005A054F /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		7B548B3A1A47FB0D005A054F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		7B548B3D1A48887C005A054F /* Startup-image-320x568.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Startup-image-320x568.png"; sourceTree = "<group>"; };
+		7B88FA181A8A77F300052464 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		7B88FA1A1A8A781800052464 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7BAE1E851A9E35B4004267CF /* data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
 		7BC391221A48FC3A002A0459 /* Descriptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Descriptor.swift; sourceTree = "<group>"; };
 		7BD087E11A54B16400F0D5EE /* RobotoSlab-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Bold.ttf"; sourceTree = "<group>"; };
 		7BD087E21A54B16400F0D5EE /* RobotoSlab-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Light.ttf"; sourceTree = "<group>"; };
@@ -134,6 +140,8 @@
 				7B548B361A47FAD3005A054F /* ViewController.swift */,
 				7B548B191A47F9DB005A054F /* DetailTableViewController.swift */,
 				7B548B3A1A47FB0D005A054F /* Main.storyboard */,
+				7B88FA1A1A8A781800052464 /* LoginViewController.swift */,
+				7B88FA181A8A77F300052464 /* SignupViewController.swift */,
 				7B548B381A47FAF8005A054F /* LaunchScreen.xib */,
 				7B548B001A47F9C3005A054F /* Images.xcassets */,
 				7BF38D891A6B315100DCE95C /* Portrait.png */,
@@ -192,6 +200,7 @@
 				7B548B251A47FA7F005A054F /* Potion.swift */,
 				7B548B1B1A47F9EF005A054F /* PotionStore.swift */,
 				7BC391221A48FC3A002A0459 /* Descriptor.swift */,
+				7BAE1E851A9E35B4004267CF /* data.plist */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -251,6 +260,8 @@
 		7B548AEC1A47F9C3005A054F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0720;
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "mitchell hudson";
 				TargetAttributes = {
@@ -288,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BD087E81A54B77700F0D5EE /* RobotoSlab-Regular.ttf in Resources */,
+				7BAE1E861A9E35B4004267CF /* data.plist in Resources */,
 				7BD087E91A54B77B00F0D5EE /* RobotoSlab-Thin.ttf in Resources */,
 				7B548B391A47FAF8005A054F /* LaunchScreen.xib in Resources */,
 				7BD087E71A54B77400F0D5EE /* RobotoSlab-Light.ttf in Resources */,
@@ -314,6 +326,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B88FA1B1A8A781800052464 /* LoginViewController.swift in Sources */,
 				7B548B371A47FAD3005A054F /* ViewController.swift in Sources */,
 				7B548B261A47FA7F005A054F /* Potion.swift in Sources */,
 				7B548B321A47FA93005A054F /* TPKeyboardAvoidingScrollView.m in Sources */,
@@ -323,6 +336,7 @@
 				7B548B1C1A47F9EF005A054F /* PotionStore.swift in Sources */,
 				7B548AFA1A47F9C3005A054F /* AppDelegate.swift in Sources */,
 				7B548B311A47FA93005A054F /* TPKeyboardAvoidingCollectionView.m in Sources */,
+				7B88FA191A8A77F300052464 /* SignupViewController.swift in Sources */,
 				7BC391231A48FC3A002A0459 /* Descriptor.swift in Sources */,
 				7B548B341A47FA93005A054F /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				7B4AADDC1A4933EB00C9D06D /* Notes.swift in Sources */,

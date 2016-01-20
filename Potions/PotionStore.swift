@@ -52,7 +52,7 @@ class PotionStore {
     
     // Get a Potion at index
     func get(index: Int) -> Potion {
-        return potions.objectAtIndex(UInt(index)) as Potion
+        return potions.objectAtIndex(UInt(index)) as! Potion
     }
     
     // Get random potion
@@ -60,16 +60,16 @@ class PotionStore {
         var total = 0
         var potionToReturn: Potion!
         for potion in potions {
-            total += (potion as Potion).frequency
+            total += (potion as! Potion).frequency
         }
         
         let randomNumber = arc4random_uniform(UInt32(total))
         
         total = 0
         for potion in potions {
-            total += (potion as Potion).frequency
+            total += (potion as! Potion).frequency
             if UInt32(total) > randomNumber {
-                potionToReturn = potion as Potion
+                potionToReturn = potion as! Potion
                 break
             }
             
